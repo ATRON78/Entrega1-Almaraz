@@ -1,0 +1,22 @@
+{% extends "App/principal.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+<h1>Busqueda de Familiares: </h1>
+
+<form action="{% url 'buscar' %}" method="get">
+
+    <input type="text" name="nombre" placeholder="Buscar..."></input>
+    <input type="submit" value="Buscar"></input>
+
+</form>
+
+{% endblock %}
+
+{% block titulo %}
+
+    <h1>Buscando Padre:</h1>
+
+{% endblock %}

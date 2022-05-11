@@ -1,0 +1,24 @@
+{% extends "App/principal.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+<div style="margin-top: 1%; text-align:center">
+    <form action="{% url 'hermanos' %}" method="POST">{% csrf_token %}
+        <br>
+        <table style="margin-left: 42%;">
+            {{formulario.as_table}}
+        </table>
+        <br>
+        <input type="submit" value="ENVIAR">   
+    </form>
+</div>
+
+{% endblock %}
+
+{% block titulo %}
+
+    <h1>HERMANO!</h1>
+
+{% endblock %}

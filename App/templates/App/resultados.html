@@ -1,0 +1,28 @@
+{% extends "App/principal.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+<h1>Familiares encontrados: </h1>
+
+{% if padres %}
+{% for padre in padres %}
+
+    <p>{{padre.nombre}} {{padre.edad}} </p>
+
+{% endfor %}
+
+{% else %}
+
+    <p>No hay familiares con ese nombre</p>
+
+{% endif %}
+
+{% endblock %}
+
+{% block titulo %}
+
+    <h1>ESTE ES EL TITULO!</h1>
+
+{% endblock %}

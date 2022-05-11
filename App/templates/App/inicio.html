@@ -1,0 +1,27 @@
+{% extends "App/principal.html" %}
+
+{% load static %}
+
+
+{% block contenidoQueCambia %}
+
+<div style="margin-top: 1%; text-align:center">
+    <form action="{% url 'buscar' %}" method="GET">
+        <input type="text" name="nombre" placeholder="Buscar..."></input>
+        <input type="submit" value="Buscar"></input>
+    </form>
+</div>
+
+{% if respuesta %}
+
+    <p style="color:red">{{respuesta}}</p>
+
+{% endif %}
+
+{% endblock %}
+
+{% block titulo %}
+
+    <h1>Buscando Padre:</h1>
+
+{% endblock %}
