@@ -1,4 +1,4 @@
-### Agustin Almaraz
+# Agustin Almaraz
 
 ## El proyecto consta de 5 paginas con distintas funcionalidades:
 > 1. Buscador: Tiene un formulario que llama a un metodo GET y redirecciona a la pagina resultados.
